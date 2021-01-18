@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  background-color: pink;
+}
+
+.timerContainer {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  height: 400px;
+}
+
+.lapdata {
+  float: left;
+  width: 200px;
+  height: 100%;
+  background: grey;
+}
+
+.timeboard {
+  background: grey;
+  margin: 0px 0px 10px 210px;
+  height: 180px;
+}
+
+.time-font {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.btnContainer {
+  background: grey;
+  margin: 0px 0px 10px 210px;
+  height: 90px;
+}
+
+.button-style {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  height: 60px;
+  margin: 10px 20px;
+}

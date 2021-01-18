@@ -19,6 +19,7 @@ timerContainer.classList.add('timerContainer');
 lapDataElement.classList.add('lapdata');
 rightContainer.classList.add('right-container');
 elapsedTimeElement.classList.add('timeboard');
+elapsedTimeElement.classList.add('time-font');
 startStopContainer.classList.add('btnContainer');
 resetLapContainer.classList.add('btnContainer');
 btnStart.classList.add('button-style');
@@ -37,10 +38,18 @@ btnLap.innerHTML = 'Lap';
 // Append Elements
 document.body.appendChild(timerContainer);
 timerContainer.appendChild(lapDataElement);
+
+// Option 1: Nest in rightContainer
 timerContainer.appendChild(rightContainer);
 rightContainer.appendChild(elapsedTimeElement);
 rightContainer.appendChild(startStopContainer);
 rightContainer.appendChild(resetLapContainer);
+
+// // Option 2: No nesting in rightContainer. Goes to timerContainer instead
+// timerContainer.appendChild(elapsedTimeElement);
+// timerContainer.appendChild(startStopContainer);
+// timerContainer.appendChild(resetLapContainer);
+
 startStopContainer.appendChild(btnStart);
 startStopContainer.appendChild(btnStop);
 resetLapContainer.appendChild(btnReset);
@@ -51,6 +60,10 @@ const startTime = () => {
   timeRunCallBack = setInterval(() => {
     console.log('running');
     timer += 1;
+    // const ms = (`${timer % 100}`);
+    // const sec = (`${Math.floor(timer / 100) % 60}`);
+    // const min = (`${Math.floor(Math.floor(timer / 100) / 60)}`);
+
     const ms = (`0${timer % 100}`).slice(-2);
     const sec = (`0${Math.floor(timer / 100) % 60}`).slice(-2);
     const min = (`0${Math.floor(Math.floor(timer / 100) / 60)}`).slice(-2);

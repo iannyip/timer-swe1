@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  background-color: pink;
+}
+
+.timerContainer {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  height: 400px;
+}
+
+.time-font {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.lapdata {
+  background-color: grey;
+  width: 25%;
+}
+
+.right-container {
+  width: 75%;
+  padding-left: 10px;
+}
+
+.timeboard {
+  background-color: grey;
+  height: 40%;
+  margin-bottom: 10px;
+}
+
+.btnContainer {
+  background-color: grey;
+  height: 27%;
+  margin-bottom: 10px;
+}
+
+.button-style {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  height: 60px;
+  margin: 10px 20px;
+}
